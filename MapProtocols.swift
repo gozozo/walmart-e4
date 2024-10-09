@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
 // MARK: - Interactor Protocols
 protocol MapInteractorProtocol {
 
     var presenter: MapPresenterProtocol? { get set }
+
+    func requestLocationPermission()
+    func getCurrentLocation()
 }
 
 // MARK: - Presenter Protocols
@@ -20,11 +25,19 @@ protocol MapPresenterProtocol: AnyObject {
     var interactor: MapInteractorProtocol? { get set }
     var router: MapRouterProtocol? { get set }
 
+    func locationManagerInit()
+    func didReceivePlaces(_ places: [MKMapItem])
+    func didFailWithError(_ error: Error?)
+    func getRadius() -> CLLocationDistance
+
 }
 
 // MARK: - View Protocols
 protocol MapViewProtocol: AnyObject {
     var presenter: MapPresenterProtocol? { get set }
+
+    func addPointAnnotation(_ location: CLLocation, title: String)
+    func showError(message: String)
 }
 
 // MARK: - Router Protocols

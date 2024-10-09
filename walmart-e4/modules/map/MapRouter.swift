@@ -8,18 +8,18 @@
 import UIKit
 
 class MapRouter: MapRouterProtocol {
-
+    
     static func createModule() -> UIViewController {
         let view = MapViewController()
         let interactor = MapInteractor()
         let presenter = MapPresenter()
-
+        
         view.presenter = presenter
         presenter.view = view
         presenter.interactor = interactor
         presenter.router = MapRouter()
         interactor.presenter = presenter
-
+        
         return view
     }
 }

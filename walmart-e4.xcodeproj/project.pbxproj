@@ -20,6 +20,7 @@
 		FD895D222CB6E3A200FF7E7A /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD895D212CB6E3A200FF7E7A /* MapViewController.xib */; };
 		FD895D242CB6E3BF00FF7E7A /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */; };
 		FD895D262CB6E3ED00FF7E7A /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */; };
+		FD895D292CB6E97900FF7E7A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD895D282CB6E97900FF7E7A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FD895D212CB6E3A200FF7E7A /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		FD895D282CB6E97900FF7E7A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD895D292CB6E97900FF7E7A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 				FD895CFE2CB6D5A000FF7E7A /* walmart-e4Tests */,
 				FD895D082CB6D5A000FF7E7A /* walmart-e4UITests */,
 				FD895CE62CB6D59B00FF7E7A /* Products */,
+				FD895D272CB6E97900FF7E7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +165,14 @@
 				FD895D212CB6E3A200FF7E7A /* MapViewController.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		FD895D272CB6E97900FF7E7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD895D282CB6E97900FF7E7A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +488,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "walmart-e4/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Necesitamos tu ubicación para ofrecerte mejores servicios.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -506,6 +519,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "walmart-e4/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Necesitamos tu ubicación para ofrecerte mejores servicios.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
