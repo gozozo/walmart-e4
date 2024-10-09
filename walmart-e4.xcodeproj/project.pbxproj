@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		FD895CE92CB6D59C00FF7E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895CE82CB6D59C00FF7E7A /* AppDelegate.swift */; };
 		FD895CEB2CB6D59C00FF7E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895CEA2CB6D59C00FF7E7A /* SceneDelegate.swift */; };
-		FD895CED2CB6D59C00FF7E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895CEC2CB6D59C00FF7E7A /* ViewController.swift */; };
-		FD895CF02CB6D59C00FF7E7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FD895CEF2CB6D59C00FF7E7A /* Base */; };
 		FD895CF22CB6D5A000FF7E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD895CF12CB6D5A000FF7E7A /* Assets.xcassets */; };
 		FD895CF52CB6D5A000FF7E7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FD895CF42CB6D5A000FF7E7A /* Base */; };
 		FD895D002CB6D5A000FF7E7A /* walmart_e4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895CFF2CB6D5A000FF7E7A /* walmart_e4Tests.swift */; };
 		FD895D0A2CB6D5A000FF7E7A /* walmart_e4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D092CB6D5A000FF7E7A /* walmart_e4UITests.swift */; };
 		FD895D0C2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D0B2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift */; };
+		FD895D1B2CB6E23900FF7E7A /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D1A2CB6E23900FF7E7A /* MapProtocols.swift */; };
+		FD895D1D2CB6E2E500FF7E7A /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D1C2CB6E2E500FF7E7A /* MapRouter.swift */; };
+		FD895D202CB6E36B00FF7E7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D1F2CB6E36B00FF7E7A /* MapViewController.swift */; };
+		FD895D222CB6E3A200FF7E7A /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD895D212CB6E3A200FF7E7A /* MapViewController.xib */; };
+		FD895D242CB6E3BF00FF7E7A /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */; };
+		FD895D262CB6E3ED00FF7E7A /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,6 @@
 		FD895CE52CB6D59B00FF7E7A /* walmart-e4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walmart-e4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD895CE82CB6D59C00FF7E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD895CEA2CB6D59C00FF7E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD895CEC2CB6D59C00FF7E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD895CEF2CB6D59C00FF7E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD895CF12CB6D5A000FF7E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD895CF42CB6D5A000FF7E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD895CF62CB6D5A000FF7E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,12 @@
 		FD895D052CB6D5A000FF7E7A /* walmart-e4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walmart-e4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD895D092CB6D5A000FF7E7A /* walmart_e4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walmart_e4UITests.swift; sourceTree = "<group>"; };
 		FD895D0B2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walmart_e4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD895D1A2CB6E23900FF7E7A /* MapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = SOURCE_ROOT; };
+		FD895D1C2CB6E2E500FF7E7A /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		FD895D1F2CB6E36B00FF7E7A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FD895D212CB6E3A200FF7E7A /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,9 @@
 		FD895CE72CB6D59C00FF7E7A /* walmart-e4 */ = {
 			isa = PBXGroup;
 			children = (
+				FD895D182CB6E1FE00FF7E7A /* modules */,
 				FD895CE82CB6D59C00FF7E7A /* AppDelegate.swift */,
 				FD895CEA2CB6D59C00FF7E7A /* SceneDelegate.swift */,
-				FD895CEC2CB6D59C00FF7E7A /* ViewController.swift */,
-				FD895CEE2CB6D59C00FF7E7A /* Main.storyboard */,
 				FD895CF12CB6D5A000FF7E7A /* Assets.xcassets */,
 				FD895CF32CB6D5A000FF7E7A /* LaunchScreen.storyboard */,
 				FD895CF62CB6D5A000FF7E7A /* Info.plist */,
@@ -125,6 +132,35 @@
 				FD895D0B2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift */,
 			);
 			path = "walmart-e4UITests";
+			sourceTree = "<group>";
+		};
+		FD895D182CB6E1FE00FF7E7A /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				FD895D192CB6E20D00FF7E7A /* map */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		FD895D192CB6E20D00FF7E7A /* map */ = {
+			isa = PBXGroup;
+			children = (
+				FD895D1E2CB6E35800FF7E7A /* view */,
+				FD895D1A2CB6E23900FF7E7A /* MapProtocols.swift */,
+				FD895D1C2CB6E2E500FF7E7A /* MapRouter.swift */,
+				FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */,
+				FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		FD895D1E2CB6E35800FF7E7A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FD895D1F2CB6E36B00FF7E7A /* MapViewController.swift */,
+				FD895D212CB6E3A200FF7E7A /* MapViewController.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD895CF22CB6D5A000FF7E7A /* Assets.xcassets in Resources */,
+				FD895D222CB6E3A200FF7E7A /* MapViewController.xib in Resources */,
 				FD895CF52CB6D5A000FF7E7A /* Base in Resources */,
-				FD895CF02CB6D59C00FF7E7A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD895CED2CB6D59C00FF7E7A /* ViewController.swift in Sources */,
+				FD895D1B2CB6E23900FF7E7A /* MapProtocols.swift in Sources */,
+				FD895D202CB6E36B00FF7E7A /* MapViewController.swift in Sources */,
+				FD895D262CB6E3ED00FF7E7A /* MapPresenter.swift in Sources */,
+				FD895D1D2CB6E2E500FF7E7A /* MapRouter.swift in Sources */,
 				FD895CE92CB6D59C00FF7E7A /* AppDelegate.swift in Sources */,
+				FD895D242CB6E3BF00FF7E7A /* MapInteractor.swift in Sources */,
 				FD895CEB2CB6D59C00FF7E7A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FD895CEE2CB6D59C00FF7E7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD895CEF2CB6D59C00FF7E7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD895CF32CB6D5A000FF7E7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +478,6 @@
 				INFOPLIST_FILE = "walmart-e4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,9 +487,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irondev.walmart-e4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,7 +508,6 @@
 				INFOPLIST_FILE = "walmart-e4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,9 +517,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irondev.walmart-e4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
