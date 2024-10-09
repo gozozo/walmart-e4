@@ -14,13 +14,13 @@
 		FD895D002CB6D5A000FF7E7A /* walmart_e4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895CFF2CB6D5A000FF7E7A /* walmart_e4Tests.swift */; };
 		FD895D0A2CB6D5A000FF7E7A /* walmart_e4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D092CB6D5A000FF7E7A /* walmart_e4UITests.swift */; };
 		FD895D0C2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D0B2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift */; };
-		FD895D1B2CB6E23900FF7E7A /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D1A2CB6E23900FF7E7A /* MapProtocols.swift */; };
 		FD895D1D2CB6E2E500FF7E7A /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D1C2CB6E2E500FF7E7A /* MapRouter.swift */; };
 		FD895D202CB6E36B00FF7E7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D1F2CB6E36B00FF7E7A /* MapViewController.swift */; };
 		FD895D222CB6E3A200FF7E7A /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD895D212CB6E3A200FF7E7A /* MapViewController.xib */; };
 		FD895D242CB6E3BF00FF7E7A /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */; };
 		FD895D262CB6E3ED00FF7E7A /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */; };
 		FD895D292CB6E97900FF7E7A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD895D282CB6E97900FF7E7A /* CoreLocation.framework */; };
+		FD895D2B2CB6FAD400FF7E7A /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD895D2A2CB6FAD400FF7E7A /* MapProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +52,13 @@
 		FD895D052CB6D5A000FF7E7A /* walmart-e4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walmart-e4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD895D092CB6D5A000FF7E7A /* walmart_e4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walmart_e4UITests.swift; sourceTree = "<group>"; };
 		FD895D0B2CB6D5A000FF7E7A /* walmart_e4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walmart_e4UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FD895D1A2CB6E23900FF7E7A /* MapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = SOURCE_ROOT; };
 		FD895D1C2CB6E2E500FF7E7A /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
 		FD895D1F2CB6E36B00FF7E7A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FD895D212CB6E3A200FF7E7A /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		FD895D282CB6E97900FF7E7A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FD895D2A2CB6FAD400FF7E7A /* MapProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +149,8 @@
 		FD895D192CB6E20D00FF7E7A /* map */ = {
 			isa = PBXGroup;
 			children = (
+				FD895D2A2CB6FAD400FF7E7A /* MapProtocols.swift */,
 				FD895D1E2CB6E35800FF7E7A /* view */,
-				FD895D1A2CB6E23900FF7E7A /* MapProtocols.swift */,
 				FD895D1C2CB6E2E500FF7E7A /* MapRouter.swift */,
 				FD895D232CB6E3BF00FF7E7A /* MapInteractor.swift */,
 				FD895D252CB6E3ED00FF7E7A /* MapPresenter.swift */,
@@ -306,13 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD895D1B2CB6E23900FF7E7A /* MapProtocols.swift in Sources */,
 				FD895D202CB6E36B00FF7E7A /* MapViewController.swift in Sources */,
 				FD895D262CB6E3ED00FF7E7A /* MapPresenter.swift in Sources */,
 				FD895D1D2CB6E2E500FF7E7A /* MapRouter.swift in Sources */,
 				FD895CE92CB6D59C00FF7E7A /* AppDelegate.swift in Sources */,
 				FD895D242CB6E3BF00FF7E7A /* MapInteractor.swift in Sources */,
 				FD895CEB2CB6D59C00FF7E7A /* SceneDelegate.swift in Sources */,
+				FD895D2B2CB6FAD400FF7E7A /* MapProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

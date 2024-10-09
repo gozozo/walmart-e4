@@ -8,11 +8,15 @@
 import CoreLocation
 import MapKit
 
-class MapInteractor:NSObject, MapInteractorProtocol {
+class MapInteractor: NSObject {
 
     var presenter: MapPresenterProtocol?
 
+    /// An instance of CLLocationManager used to manage location-related events and services.
     private let locationManager = CLLocationManager()
+}
+
+extension MapInteractor: MapInteractorProtocol {
 
     func requestLocationPermission() {
         locationManager.requestWhenInUseAuthorization()
@@ -23,7 +27,7 @@ class MapInteractor:NSObject, MapInteractorProtocol {
         locationManager.startUpdatingLocation()
     }
 
-    private func searchForNearbyPlaces(location: CLLocation) {
+    func searchForNearbyPlaces(location: CLLocation) {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = "restaurant"
         request.region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: presenter?.getRadius() ?? 1000, longitudinalMeters: presenter?.getRadius() ?? 1000)
@@ -44,7 +48,7 @@ extension MapInteractor: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             locationManager.stopUpdatingLocation()
-            self.searchForNearbyPlaces(location: location)
+            presenter?.didRetrieveCurrentLocation(location)
         }
     }
 

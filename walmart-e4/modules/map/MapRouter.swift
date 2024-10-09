@@ -9,11 +9,14 @@ import UIKit
 
 class MapRouter: MapRouterProtocol {
     
+    /// Creates and returns a new instance of the Map module's view controller.
+    /// 
+    /// - Returns: A `UIViewController` instance representing the Map module.
     static func createModule() -> UIViewController {
         let view = MapViewController()
         let interactor = MapInteractor()
         let presenter = MapPresenter()
-        
+
         view.presenter = presenter
         presenter.view = view
         presenter.interactor = interactor
